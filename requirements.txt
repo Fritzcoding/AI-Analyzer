@@ -1,0 +1,35 @@
+# Core ML
+scikit-learn>=1.4.0
+tensorflow>=2.15.0
+numpy>=1.26.0
+pandas>=2.1.0
+scipy>=1.11.0
+
+# Data loading
+liac-arff>=2.5.0
+
+# Imbalanced data (bonus points)
+imbalanced-learn>=0.11.0
+
+# Hyperparameter optimization [PORTFOLIO]
+optuna>=3.5.0
+
+# Explainability [PORTFOLIO]
+shap>=0.44.0
+
+# Experiment tracking [PORTFOLIO]
+mlflow>=2.10.0
+
+# Statistical tests [PORTFOLIO]
+statsmodels>=0.14.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Report generation
+python-docx>=1.1.0
+
+# Utilities
+joblib>=1.3.0
+tqdm>=4.66.0

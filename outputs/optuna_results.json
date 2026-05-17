@@ -1,0 +1,20 @@
+[
+  {
+    "system": "B_svm_optuna",
+    "classifier": "linear",
+    "config": "C=991.9724203133106, kernel=linear, gamma=auto",
+    "accuracy": 0.9648093841642229,
+    "precision": 0.6067522641293133,
+    "recall": 0.7018527890238416,
+    "f1": 0.6468733266970212
+  },
+  {
+    "system": "D_gb_optuna",
+    "classifier": "Optuna",
+    "config": "n_estimators=476, learning_rate=0.018945071245574388, max_depth=14, subsample=0.8198990965633675",
+    "accuracy": 0.9882697947214076,
+    "precision": 0.7206196581196581,
+    "recall": 0.7206196581196581,
+    "f1": 0.7206196581196581
+  }
+]

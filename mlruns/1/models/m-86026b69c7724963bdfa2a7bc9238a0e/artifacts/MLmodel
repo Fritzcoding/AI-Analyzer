@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Fritz/Downloads/AI Analyzer/mlruns/1/models/m-86026b69c7724963bdfa2a7bc9238a0e/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-86026b69c7724963bdfa2a7bc9238a0e
+model_size_bytes: 1447
+model_uuid: m-86026b69c7724963bdfa2a7bc9238a0e
+prompts: null
+run_id: 6dded3ea363a419291e5cd8b8d655b7f
+utc_time_created: '2026-05-15 05:34:35.010459'

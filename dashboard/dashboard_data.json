@@ -1,0 +1,170 @@
+{
+  "classifiers": [
+    {
+      "id": "A_naive_bayes",
+      "label": "Naive Bayes",
+      "family": "Probabilistic",
+      "complexity": 1,
+      "config": "var_smoothing=1e-07",
+      "metrics": {
+        "accuracy": 0.1144,
+        "precision": 0.2752,
+        "recall": 0.3358,
+        "f1": 0.0807,
+        "inference_ms": 0.39
+      }
+    },
+    {
+      "id": "B_svm",
+      "label": "SVM",
+      "family": "Kernel Method",
+      "complexity": 3,
+      "config": "C=10, gamma=scale, kernel=linear",
+      "metrics": {
+        "accuracy": 0.9062,
+        "precision": 0.5063,
+        "recall": 0.7128,
+        "f1": 0.572,
+        "inference_ms": 6.54
+      }
+    },
+    {
+      "id": "C_random_forest",
+      "label": "Random Forest",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "max_depth=10, min_samples_split=5, n_estimators=100",
+      "metrics": {
+        "accuracy": 0.9883,
+        "precision": 0.7004,
+        "recall": 0.7476,
+        "f1": 0.7227,
+        "inference_ms": 61.34
+      }
+    },
+    {
+      "id": "D_gradient_boosting",
+      "label": "Gradient Boosting (XGBoost-like)",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "learning_rate=0.05, max_depth=5, n_estimators=300",
+      "metrics": {
+        "accuracy": 0.9941,
+        "precision": 0.7242,
+        "recall": 0.7492,
+        "f1": 0.736,
+        "inference_ms": 12.23
+      }
+    },
+    {
+      "id": "E_decision_tree",
+      "label": "Decision Tree (Deep)",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "max_depth=10, min_samples_leaf=4, min_samples_split=2",
+      "metrics": {
+        "accuracy": 0.9912,
+        "precision": 0.7242,
+        "recall": 0.7484,
+        "f1": 0.7356,
+        "inference_ms": 0.25
+      }
+    },
+    {
+      "id": "F_logistic_regression",
+      "label": "Logistic Regression (L2 Regularized)",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "C=10, penalty=l2, solver=saga",
+      "metrics": {
+        "accuracy": 0.9619,
+        "precision": 0.6267,
+        "recall": 0.7404,
+        "f1": 0.6749,
+        "inference_ms": 0.27
+      }
+    },
+    {
+      "id": "G_adaboost",
+      "label": "AdaBoost Ensemble",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "learning_rate=0.5, n_estimators=300",
+      "metrics": {
+        "accuracy": 0.9589,
+        "precision": 0.6971,
+        "recall": 0.9618,
+        "f1": 0.7449,
+        "inference_ms": 39.33
+      }
+    },
+    {
+      "id": "H_dnn_shallow",
+      "label": "DNN (Shallow)",
+      "family": "Neural Network",
+      "complexity": 4,
+      "config": "layers=[64], dropout=0.0, lr=0.001",
+      "metrics": {
+        "accuracy": 0.9736,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.6623,
+        "inference_ms": 272.28
+      }
+    },
+    {
+      "id": "I_dnn_medium",
+      "label": "DenseNN",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "layers=[128, 64], dropout=0.2, lr=0.001",
+      "metrics": {
+        "accuracy": 0.9795,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.686,
+        "inference_ms": 264.44
+      }
+    },
+    {
+      "id": "J_dnn_deep",
+      "label": "DenseNN",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "layers=[256, 128, 64], dropout=0.3, lr=0.0005",
+      "metrics": {
+        "accuracy": 0.9619,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.636,
+        "inference_ms": 278.08
+      }
+    },
+    {
+      "id": "K_dnn_wide",
+      "label": "DenseNN",
+      "family": "Unknown",
+      "complexity": 3,
+      "config": "layers=[512, 256], dropout=0.2, lr=0.001",
+      "metrics": {
+        "accuracy": 0.9765,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.6814,
+        "inference_ms": 315.42
+      }
+    }
+  ],
+  "dataset": {
+    "n_train": 3057,
+    "n_test": 341,
+    "n_features": 22,
+    "n_classes": 4,
+    "class_distribution": {
+      "Class_0": 167,
+      "Class_1": 2809,
+      "Class_2": 80,
+      "Class_3": 1
+    }
+  }
+}

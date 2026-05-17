@@ -1,0 +1,100 @@
+[
+  {
+    "system": "A_naive_bayes",
+    "classifier": "Gaussian Naive Bayes (with sample weighting)",
+    "config": "var_smoothing=1e-07",
+    "accuracy": 0.11436950146627566,
+    "precision": 0.2751588983050847,
+    "recall": 0.33582152496626183,
+    "f1": 0.08071186032186456,
+    "f1_weighted": 0.14331735365375795
+  },
+  {
+    "system": "B_svm",
+    "classifier": "Support Vector Machine (RBF/Linear)",
+    "config": "C=10, gamma=scale, kernel=linear",
+    "accuracy": 0.906158357771261,
+    "precision": 0.5062594649167087,
+    "recall": 0.7128036437246963,
+    "f1": 0.5720157735225238,
+    "f1_weighted": 0.9199637905255846
+  },
+  {
+    "system": "C_random_forest",
+    "classifier": "Random Forest",
+    "config": "max_depth=10, min_samples_split=5, n_estimators=100",
+    "accuracy": 0.9882697947214076,
+    "precision": 0.700384024577573,
+    "recall": 0.7475961538461539,
+    "f1": 0.7227343882213572,
+    "f1_weighted": 0.9870084601797844
+  },
+  {
+    "system": "D_gradient_boosting",
+    "classifier": "Gradient Boosting (XGBoost-like)",
+    "config": "learning_rate=0.05, max_depth=5, n_estimators=300",
+    "accuracy": 0.9941348973607038,
+    "precision": 0.7241987179487179,
+    "recall": 0.749198717948718,
+    "f1": 0.7360408232118758,
+    "f1_weighted": 0.9927457941040284
+  },
+  {
+    "system": "E_decision_tree",
+    "classifier": "Decision Tree (Deep)",
+    "config": "max_depth=10, min_samples_leaf=4, min_samples_split=2",
+    "accuracy": 0.9912023460410557,
+    "precision": 0.7241961414790997,
+    "recall": 0.7483974358974359,
+    "f1": 0.7356382529357101,
+    "f1_weighted": 0.9912724577267413
+  },
+  {
+    "system": "F_logistic_regression",
+    "classifier": "Logistic Regression (L2 Regularized)",
+    "config": "C=10, penalty=l2, solver=saga",
+    "accuracy": 0.9618768328445748,
+    "precision": 0.6266694352159469,
+    "recall": 0.7403846153846154,
+    "f1": 0.6748930107412978,
+    "f1_weighted": 0.9662954168486788
+  },
+  {
+    "system": "G_adaboost",
+    "classifier": "AdaBoost Ensemble",
+    "config": "learning_rate=0.5, n_estimators=300",
+    "accuracy": 0.9589442815249267,
+    "precision": 0.6971031746031746,
+    "recall": 0.9618055555555556,
+    "f1": 0.7449123588829472,
+    "f1_weighted": 0.9663396950355724
+  },
+  {
+    "system": "H_dnn_shallow",
+    "classifier": "DenseNN",
+    "config": "layers=[64], dropout=0.0, lr=0.001",
+    "accuracy": 0.9736070381231672,
+    "f1": 0.6622503840245776
+  },
+  {
+    "system": "I_dnn_medium",
+    "classifier": "DenseNN",
+    "config": "layers=[128, 64], dropout=0.2, lr=0.001",
+    "accuracy": 0.9794721407624634,
+    "f1": 0.6860422723042532
+  },
+  {
+    "system": "J_dnn_deep",
+    "classifier": "DenseNN",
+    "config": "layers=[256, 128, 64], dropout=0.3, lr=0.0005",
+    "accuracy": 0.9618768328445748,
+    "f1": 0.6360046457607433
+  },
+  {
+    "system": "K_dnn_wide",
+    "classifier": "DenseNN",
+    "config": "layers=[512, 256], dropout=0.2, lr=0.001",
+    "accuracy": 0.9765395894428153,
+    "f1": 0.6814015375517445
+  }
+]

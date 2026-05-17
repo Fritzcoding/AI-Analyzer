@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/Fritz/Downloads/AI Analyzer/mlruns/1/models/m-645460b7f8e34f68ad7636f9463c61b5/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.12.4
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.12.0
+model_id: m-645460b7f8e34f68ad7636f9463c61b5
+model_size_bytes: 640697
+model_uuid: m-645460b7f8e34f68ad7636f9463c61b5
+prompts: null
+run_id: 527ee1f910bf47b7bd6a7c6d7cba5c6f
+utc_time_created: '2026-05-15 05:35:15.790472'

@@ -1,0 +1,530 @@
+{
+  "alpha": 0.05,
+  "pairs": {
+    "A_naive_bayes_vs_B_svm": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and B_svm (p=1.0000)"
+    },
+    "A_naive_bayes_vs_B_svm_optuna": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and B_svm_optuna (p=1.0000)"
+    },
+    "A_naive_bayes_vs_C_random_forest": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and C_random_forest (p=1.0000)"
+    },
+    "A_naive_bayes_vs_D_gb_optuna": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and D_gb_optuna (p=1.0000)"
+    },
+    "A_naive_bayes_vs_D_gradient_boosting": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and D_gradient_boosting (p=1.0000)"
+    },
+    "A_naive_bayes_vs_E_decision_tree": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and E_decision_tree (p=1.0000)"
+    },
+    "A_naive_bayes_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and F_logistic_regression (p=1.0000)"
+    },
+    "A_naive_bayes_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and G_adaboost (p=1.0000)"
+    },
+    "A_naive_bayes_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and G_dnn_shallow (p=1.0000)"
+    },
+    "A_naive_bayes_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and H_dnn_deep (p=1.0000)"
+    },
+    "A_naive_bayes_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and H_dnn_shallow (p=1.0000)"
+    },
+    "A_naive_bayes_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and I_dnn_medium (p=1.0000)"
+    },
+    "A_naive_bayes_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and J_dnn_deep (p=1.0000)"
+    },
+    "A_naive_bayes_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between A_naive_bayes and K_dnn_wide (p=1.0000)"
+    },
+    "B_svm_vs_B_svm_optuna": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and B_svm_optuna (p=1.0000)"
+    },
+    "B_svm_vs_C_random_forest": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and C_random_forest (p=1.0000)"
+    },
+    "B_svm_vs_D_gb_optuna": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and D_gb_optuna (p=1.0000)"
+    },
+    "B_svm_vs_D_gradient_boosting": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and D_gradient_boosting (p=1.0000)"
+    },
+    "B_svm_vs_E_decision_tree": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and E_decision_tree (p=1.0000)"
+    },
+    "B_svm_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and F_logistic_regression (p=1.0000)"
+    },
+    "B_svm_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and G_adaboost (p=1.0000)"
+    },
+    "B_svm_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and G_dnn_shallow (p=1.0000)"
+    },
+    "B_svm_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and H_dnn_deep (p=1.0000)"
+    },
+    "B_svm_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and H_dnn_shallow (p=1.0000)"
+    },
+    "B_svm_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and I_dnn_medium (p=1.0000)"
+    },
+    "B_svm_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and J_dnn_deep (p=1.0000)"
+    },
+    "B_svm_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm and K_dnn_wide (p=1.0000)"
+    },
+    "B_svm_optuna_vs_C_random_forest": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and C_random_forest (p=1.0000)"
+    },
+    "B_svm_optuna_vs_D_gb_optuna": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and D_gb_optuna (p=1.0000)"
+    },
+    "B_svm_optuna_vs_D_gradient_boosting": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and D_gradient_boosting (p=1.0000)"
+    },
+    "B_svm_optuna_vs_E_decision_tree": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and E_decision_tree (p=1.0000)"
+    },
+    "B_svm_optuna_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and F_logistic_regression (p=1.0000)"
+    },
+    "B_svm_optuna_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and G_adaboost (p=1.0000)"
+    },
+    "B_svm_optuna_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and G_dnn_shallow (p=1.0000)"
+    },
+    "B_svm_optuna_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and H_dnn_deep (p=1.0000)"
+    },
+    "B_svm_optuna_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and H_dnn_shallow (p=1.0000)"
+    },
+    "B_svm_optuna_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and I_dnn_medium (p=1.0000)"
+    },
+    "B_svm_optuna_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and J_dnn_deep (p=1.0000)"
+    },
+    "B_svm_optuna_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between B_svm_optuna and K_dnn_wide (p=1.0000)"
+    },
+    "C_random_forest_vs_D_gb_optuna": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and D_gb_optuna (p=1.0000)"
+    },
+    "C_random_forest_vs_D_gradient_boosting": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and D_gradient_boosting (p=1.0000)"
+    },
+    "C_random_forest_vs_E_decision_tree": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and E_decision_tree (p=1.0000)"
+    },
+    "C_random_forest_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and F_logistic_regression (p=1.0000)"
+    },
+    "C_random_forest_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and G_adaboost (p=1.0000)"
+    },
+    "C_random_forest_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and G_dnn_shallow (p=1.0000)"
+    },
+    "C_random_forest_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and H_dnn_deep (p=1.0000)"
+    },
+    "C_random_forest_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and H_dnn_shallow (p=1.0000)"
+    },
+    "C_random_forest_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and I_dnn_medium (p=1.0000)"
+    },
+    "C_random_forest_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and J_dnn_deep (p=1.0000)"
+    },
+    "C_random_forest_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between C_random_forest and K_dnn_wide (p=1.0000)"
+    },
+    "D_gb_optuna_vs_D_gradient_boosting": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and D_gradient_boosting (p=1.0000)"
+    },
+    "D_gb_optuna_vs_E_decision_tree": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and E_decision_tree (p=1.0000)"
+    },
+    "D_gb_optuna_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and F_logistic_regression (p=1.0000)"
+    },
+    "D_gb_optuna_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and G_adaboost (p=1.0000)"
+    },
+    "D_gb_optuna_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and G_dnn_shallow (p=1.0000)"
+    },
+    "D_gb_optuna_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and H_dnn_deep (p=1.0000)"
+    },
+    "D_gb_optuna_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and H_dnn_shallow (p=1.0000)"
+    },
+    "D_gb_optuna_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and I_dnn_medium (p=1.0000)"
+    },
+    "D_gb_optuna_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and J_dnn_deep (p=1.0000)"
+    },
+    "D_gb_optuna_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gb_optuna and K_dnn_wide (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_E_decision_tree": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and E_decision_tree (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and F_logistic_regression (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and G_adaboost (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and G_dnn_shallow (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and H_dnn_deep (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and H_dnn_shallow (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and I_dnn_medium (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and J_dnn_deep (p=1.0000)"
+    },
+    "D_gradient_boosting_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between D_gradient_boosting and K_dnn_wide (p=1.0000)"
+    },
+    "E_decision_tree_vs_F_logistic_regression": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and F_logistic_regression (p=1.0000)"
+    },
+    "E_decision_tree_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and G_adaboost (p=1.0000)"
+    },
+    "E_decision_tree_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and G_dnn_shallow (p=1.0000)"
+    },
+    "E_decision_tree_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and H_dnn_deep (p=1.0000)"
+    },
+    "E_decision_tree_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and H_dnn_shallow (p=1.0000)"
+    },
+    "E_decision_tree_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and I_dnn_medium (p=1.0000)"
+    },
+    "E_decision_tree_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and J_dnn_deep (p=1.0000)"
+    },
+    "E_decision_tree_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between E_decision_tree and K_dnn_wide (p=1.0000)"
+    },
+    "F_logistic_regression_vs_G_adaboost": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and G_adaboost (p=1.0000)"
+    },
+    "F_logistic_regression_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and G_dnn_shallow (p=1.0000)"
+    },
+    "F_logistic_regression_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and H_dnn_deep (p=1.0000)"
+    },
+    "F_logistic_regression_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and H_dnn_shallow (p=1.0000)"
+    },
+    "F_logistic_regression_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and I_dnn_medium (p=1.0000)"
+    },
+    "F_logistic_regression_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and J_dnn_deep (p=1.0000)"
+    },
+    "F_logistic_regression_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between F_logistic_regression and K_dnn_wide (p=1.0000)"
+    },
+    "G_adaboost_vs_G_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_adaboost and G_dnn_shallow (p=1.0000)"
+    },
+    "G_adaboost_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_adaboost and H_dnn_deep (p=1.0000)"
+    },
+    "G_adaboost_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_adaboost and H_dnn_shallow (p=1.0000)"
+    },
+    "G_adaboost_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_adaboost and I_dnn_medium (p=1.0000)"
+    },
+    "G_adaboost_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_adaboost and J_dnn_deep (p=1.0000)"
+    },
+    "G_adaboost_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_adaboost and K_dnn_wide (p=1.0000)"
+    },
+    "G_dnn_shallow_vs_H_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_dnn_shallow and H_dnn_deep (p=1.0000)"
+    },
+    "G_dnn_shallow_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_dnn_shallow and H_dnn_shallow (p=1.0000)"
+    },
+    "G_dnn_shallow_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_dnn_shallow and I_dnn_medium (p=1.0000)"
+    },
+    "G_dnn_shallow_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_dnn_shallow and J_dnn_deep (p=1.0000)"
+    },
+    "G_dnn_shallow_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between G_dnn_shallow and K_dnn_wide (p=1.0000)"
+    },
+    "H_dnn_deep_vs_H_dnn_shallow": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_deep and H_dnn_shallow (p=1.0000)"
+    },
+    "H_dnn_deep_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_deep and I_dnn_medium (p=1.0000)"
+    },
+    "H_dnn_deep_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_deep and J_dnn_deep (p=1.0000)"
+    },
+    "H_dnn_deep_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_deep and K_dnn_wide (p=1.0000)"
+    },
+    "H_dnn_shallow_vs_I_dnn_medium": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_shallow and I_dnn_medium (p=1.0000)"
+    },
+    "H_dnn_shallow_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_shallow and J_dnn_deep (p=1.0000)"
+    },
+    "H_dnn_shallow_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between H_dnn_shallow and K_dnn_wide (p=1.0000)"
+    },
+    "I_dnn_medium_vs_J_dnn_deep": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between I_dnn_medium and J_dnn_deep (p=1.0000)"
+    },
+    "I_dnn_medium_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between I_dnn_medium and K_dnn_wide (p=1.0000)"
+    },
+    "J_dnn_deep_vs_K_dnn_wide": {
+      "p_value": 1.0,
+      "significant": false,
+      "interpretation": "No significant difference between J_dnn_deep and K_dnn_wide (p=1.0000)"
+    }
+  }
+}
