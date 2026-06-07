@@ -32,7 +32,7 @@ tf.random.set_seed(RANDOM_STATE)
 # System H: Shallow architecture (baseline for DNN, minimal regularization)
 # System I: Medium depth with moderate regularization
 # System J: Deeper architecture with strong regularization  
-DNN_CONFIGS: list[tuple] = [
+DNN_CONFIGS: list[tuple[str, list[int], float, float, int]] = [
     ("H_dnn_shallow",     [64],              0.0,  0.001,  64),   # 1 layer, no dropout
     ("I_dnn_medium",      [128, 64],         0.2,  0.001,  64),   # 2 layers with light dropout
     ("J_dnn_deep",        [256, 128, 64],    0.3,  0.0005, 32),   # 3 layers with strong dropout
@@ -181,20 +181,26 @@ def train_dnn(system_id: str, hidden_layers: list[int], dropout_rate: float,
     
     accuracy = accuracy_score(y_test, y_pred)
     report = classification_report(y_test, y_pred, output_dict=True, zero_division=0)
-    f1 = report.get("macro avg", {}).get("f1-score", 0.0)
+    precision_macro = report.get("macro avg", {}).get("precision", 0.0)
+    recall_macro = report.get("macro avg", {}).get("recall", 0.0)
+    f1_macro = report.get("macro avg", {}).get("f1-score", 0.0)
+    f1_weighted = report.get("weighted avg", {}).get("f1-score", 0.0)
     
-    # Plot history
+    # Plot diagnostics
     plot_history(history, system_id)
     
     # Format config string
-    config_str = f"layers={hidden_layers}, dropout={dropout_rate:.1f}, lr={learning_rate}"
+    config_str = f"layers={hidden_layers}, dropout={dropout_rate:g}, lr={learning_rate}, batch_size={batch_size}"
     
     result = {
         "system": system_id,
         "classifier": "DenseNN",
         "config": config_str,
         "accuracy": accuracy,
-        "f1": f1
+        "precision": precision_macro,
+        "recall": recall_macro,
+        "f1": f1_macro,
+        "f1_weighted": f1_weighted,
     }
     
     return result

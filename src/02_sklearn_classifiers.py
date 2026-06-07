@@ -11,8 +11,6 @@ import json
 import logging
 import numpy as np
 import joblib
-import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
@@ -28,11 +26,10 @@ try:
 except ImportError:
     HAS_XGBOOST = False
 from sklearn.metrics import (
-    accuracy_score, classification_report,
-    confusion_matrix, ConfusionMatrixDisplay
+    accuracy_score, classification_report
 )
 
-from config import MODEL_DIR, FIGURE_DIR, RESULTS_FILE, CV_FOLDS, RANDOM_STATE
+from config import MODEL_DIR, RESULTS_FILE, CV_FOLDS, RANDOM_STATE
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 logger = logging.getLogger(__name__)
@@ -100,30 +97,6 @@ def load_data() -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     return X_train, y_train, X_test, y_test
 
 
-def plot_confusion_matrix(y_true: np.ndarray, y_pred: np.ndarray,
-                           system_id: str, clf_name: str) -> None:
-    """Save a confusion matrix heatmap for a classifier.
-
-    Args:
-        y_true:   Ground truth labels.
-        y_pred:   Predicted labels.
-        system_id: Short system identifier (e.g., 'A_naive_bayes').
-        clf_name:  Human-readable classifier name.
-    """
-    cm = confusion_matrix(y_true, y_pred)
-    fig, ax = plt.subplots(figsize=(8, 6))
-    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", ax=ax, cbar_kws={"label": "Count"})
-    ax.set_xlabel("Predicted Label")
-    ax.set_ylabel("True Label")
-    ax.set_title(f"Confusion Matrix: {clf_name}")
-    
-    output_path = FIGURE_DIR / f"cm_{system_id}.png"
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=150, bbox_inches="tight")
-    plt.close()
-    logger.info("Confusion matrix saved: %s", output_path)
-
-
 def train_and_evaluate(system_id: str, estimator, param_grid: dict,
                         clf_name: str, X_train: np.ndarray, y_train: np.ndarray,
                         X_test: np.ndarray, y_test: np.ndarray) -> dict:
@@ -169,9 +142,6 @@ def train_and_evaluate(system_id: str, estimator, param_grid: dict,
         recall_macro = report.get("macro avg", {}).get("recall", 0.0)
         f1_macro = report.get("macro avg", {}).get("f1-score", 0.0)
         f1_weighted = report.get("weighted avg", {}).get("f1-score", 0.0)
-        
-        # Plot confusion matrix
-        plot_confusion_matrix(y_test, y_pred, system_id, clf_name)
         
         # Save best estimator
         model_path = MODEL_DIR / f"{system_id}.pkl"

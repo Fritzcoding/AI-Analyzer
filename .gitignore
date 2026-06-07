@@ -10,6 +10,12 @@ env/
 node_modules/
 dist/
 build/
-agents.md
 .DS_Store
 Thumbs.db
+
+# Local/generated ML artifacts
+data/*.arff
+outputs/
+mlruns/
+logs/
+dashboard/dashboard_data.json
